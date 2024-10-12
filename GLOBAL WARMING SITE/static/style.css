@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c8e6c9; /* Light green background */
+    color: #2e5b29; /* Dark green text color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #388e3c; /* Rich green header */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.features {
+    background-color: #a5d6a7; /* Softer green for features */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.features h3 {
+    text-align: center;
+    color: #2e5b29; /* Dark green for heading contrast */
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.article {
+    text-align: center;
+    background-color: #b2ebf2; /* Soft turquoise color for articles */
+    border-radius: 8px;
+    padding: 20px;
+}
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Add some space above the footer */
+} 
+
+button {
+    background-color: #ffcc80; /* Light amber color for buttons */
+    color: #2e5b29; /* Dark green for button text */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #ffb74d; /* Darker amber on hover */
+}
+
+.intro img {
+    max-width: 300px; /* Limit the maximum width of the image to 300 pixels */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.news-button {
+    background-color: #66bb6a; /* Light green */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-button:hover {
+    background-color: #4caf50; /* Darker green on hover */
+}
+
+.article-button {
+    background-color: #a5d6a7; /* Light green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.article-button:hover {
+    background-color: #438d45; /* A slightly darker green on hover */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.header-image {
+    max-width: 300px; /* Limit the maximum width of the image */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover-text {
+    position: absolute;
+    left: 320px; /* Position it to the right of the image */
+    top: 0; /* Align to the top */
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #004d40;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+}
+
+.news-button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block; /* Make the button behave like a block element */
+    text-align: center;
+}
+
+.news-button:hover {
+    background-color: #004d40;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Add some space above the footer */
+}

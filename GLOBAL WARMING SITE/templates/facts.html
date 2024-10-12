@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Факты о глобальном потеплении{% endblock %}
+
+{% block content %}
+    <h2>Интересные факты</h2>
+    <p id="fact">{{ facts[0] }}</p>
+    <button onclick="getNewFact()">Получить новый факт 🌍</button>
+    <script>
+        function getNewFact() {
+            fetch('/new_fact')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('fact').innerText = data;
+                });
+        }
+    </script>
+{% endblock %}

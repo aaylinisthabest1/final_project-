@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Калькулятор углеродного следа{% endblock %}
+
+{% block content %}
+    <h2>Калькулятор углеродного следа</h2>
+    <form>
+        <label for="carMiles">Сколько миль вы проезжаете на машине в неделю?</label>
+        <input type="number" id="carMiles" name="carMiles" required>
+        
+        <label for="electricityUsage">Сколько кВтч электроэнергии вы используете в месяц?</label>
+        <input type="number" id="electricityUsage" name="electricityUsage" required>
+        
+        <button type="button" onclick="calculateFootprint()">Рассчитать углеродный след 🌱</button>
+    </form>
+    <p id="result"></p>
+    
+    <script>
+        function calculateFootprint() {
+            let miles = document.getElementById('carMiles').value;
+            let electricity = document.getElementById('electricityUsage').value;
+            let footprint = (miles * 0.411) + (electricity * 0.7); // Примерные коэффициенты
+
+            let emoji;
+            if (footprint < 50) {
+                emoji = "🌍 Хорошо! Вы заботитесь о планете!";
+            } else if (footprint < 100) {
+                emoji = "😊 Неплохо, но есть место для улучшения.";
+            } else {
+                emoji = "😟 Вы можете уменьшить свой углеродный след!";
+            }
+
+            document.getElementById('result').innerText = "Ваш углеродный след составляет: " + footprint.toFixed(2) + " кг CO2 в месяц. " + emoji;
+        }
+    </script>
+{% endblock %}

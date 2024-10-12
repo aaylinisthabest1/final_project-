@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Советы по экологии{% endblock %}
+
+{% block content %}
+    <h2>Полезные советы</h2>
+    <ul>
+        {% for tip in tips %}
+            <li>{{ tip }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
